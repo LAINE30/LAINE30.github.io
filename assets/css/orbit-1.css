@@ -8,7 +8,7 @@
 */
 body {
   font-family: "Roboto", sans-serif;
-  color: #545E6C;
+  color: #51575f;
   background: #f5f5f5;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -20,12 +20,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: #2d7788;
+  color: #3f7f88;
   text-decoration: none;
 }
 a:hover {
   text-decoration: underline;
-  color: #1a454f;
+  color: #172f4ede;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
@@ -40,7 +40,7 @@ p {
 }
 
 .wrapper {
-  background: #42A8C0;
+  background: #25aeb3;
   max-width: 960px;
   margin: 0 auto;
   position: relative;
@@ -48,7 +48,7 @@ p {
 }
 
 .sidebar-wrapper {
-  background: #42A8C0;
+  background: #a73d5d;
   position: absolute;
   right: 0;
   width: 240px;
@@ -63,7 +63,7 @@ p {
   padding: 30px;
   background: rgba(0, 0, 0, 0.2);
   text-align: center;
-  color: #fff;
+  color: #c54933de;
 }
 .sidebar-wrapper .name {
   font-size: 32px;
