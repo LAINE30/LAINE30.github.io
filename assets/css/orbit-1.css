@@ -9,7 +9,7 @@
 body {
   font-family: "Roboto", sans-serif;
   color: #51575f;
-  background: #f5f5f5;
+  background: #e6f7ff;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -47,8 +47,9 @@ p {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/*parte de abajo izquierda*/
 .sidebar-wrapper {
-  background: #a73d5d;
+  background: #dd5981;
   position: absolute;
   right: 0;
   width: 240px;
@@ -59,11 +60,12 @@ p {
 .sidebar-wrapper a {
   color: #fff;
 }
+/* Parte del perfil en la foto las letras */
 .sidebar-wrapper .profile-container {
   padding: 30px;
   background: rgba(0, 0, 0, 0.2);
   text-align: center;
-  color: #c54933de;
+  color: #030303de;
 }
 .sidebar-wrapper .name {
   font-size: 32px;
@@ -150,8 +152,15 @@ p {
   margin-bottom: 0;
 }
 
+
+/* cabezera principlalalaalalla */
 .main-wrapper {
-  background: #fff;
+  background-image: url('assets/images/v1016-b-09.jpg'); /* Reemplaza con la URL de tu imagen */
+  background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+  /*background-repeat: no-repeat;*/
+  background-position: center;
+  
+  /*background: #fff;*/
   padding: 60px;
   padding-right: 300px;
 }
@@ -257,7 +266,7 @@ p {
   font-size: 13px;
 }
 .footer .fa-heart {
-  color: #fb866a;
+  color: #f8f8f8;
 }
 
 @media (max-width: 767.98px) {
