@@ -1,316 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <title>Mateo Laine</title>
-    
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <title>Mateo Laine - Portafolio Profesional</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Responsive HTML5 Resume/CV Template for Developers">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
-    <link rel="shortcut icon" href="favicon.ico">  
-    <!-- Google Font -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <!-- FontAwesome JS-->
-	<script defer src="assets/fontawesome/js/all.min.js"></script>
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
-    <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="assets/css/orbit-1.css">
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
     <style>
         body {
-            background-image: url('assets/images/17973908.jpg');
-            background-size: cover; /* Hace que la imagen cubra todo el fondo */
-            background-position: center; /* Centra la imagen */
-            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('assets/images/17973908.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        header {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        header img {
+            width: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        header h1 {
+            margin: 10px 0 5px;
+        }
+        .container-section {
+            padding: 40px 20px;
+        }
+        .section-title {
+            border-bottom: 2px solid #333;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .skills-bar {
+            background: #eee;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+        .skills-bar div {
+            height: 20px;
+            background: #007BFF;
+            color: white;
+            text-align: right;
+            padding-right: 5px;
+            line-height: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            background-color: #f8f9fa;
         }
     </style>
-    
-
-</head> 
-
+</head>
 <body>
-    <div class="wrapper mt-lg-5">
-        <div class="sidebar-wrapper">
-            <div class="profile-container">
-                <img class="profile" src="assets/images/profile.png" alt="" />
-                <h1 class="name">Luis Mateo
-                    Coronado Laine</h1>
-                <h3 class="tagline">Estudiante de Ingenieria en la Escuela Politécnica Nacional</h3>
-            </div><!--//profile-container-->
-            
-            <div class="contact-container container-block">
-                <ul class="list-unstyled contact-list">
-                    <li class="email"><i class="fa-solid fa-envelope"></i><a href="mailto: yourname@email.com">luis.coronado "@epn.edu.ec"</a></li>
-                    <li class="phone"><i class="fa-solid fa-phone"></i><a href="tel:0123 456 789">0987654321</a></li>
-                    <li class="website"><i class="fa-solid fa-globe"></i><a href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/orbit-free-resume-cv-bootstrap-theme-for-developers/" target="_blank">portfoliosite.com</a></li>
-                    <li class="linkedin"><i class="fa-brands fa-linkedin-in"></i><a href="#" target="_blank">linkedin.com/in/mateo-coronado-477088279</a></li>
-                    <li class="github"><i class="fa-brands fa-github"></i><a href="#" target="_blank">github.com/LAINE30</a></li>
-                    <li class="twitter"><i class="fa-brands fa-twitter"></i><a href="https://twitter.com/3rdwave_themes" target="_blank">@twittername</a></li>
-                </ul>
-            </div><!--//contact-container-->
-            <div class="education-container container-block">
-                <h2 class="container-block-title">Educación</h2>
-                <div class="item">
-                    <h4 class="degree">(Actualmente estudiando) Ingeniería en Ciencias de la Computación</h4>
-                    <h5 class="meta">Escuela Politécnica Nacional - Ecuador</h5>
-	                    <div class="time">desde Marzo de 2022</div>
-                </div><!--//item-->
-                <div class="item">
-                    <h4 class="degree">Bachillerato Internacional</h4>
-                    <h5 class="meta">Institución Educativa Fiscal Amazonas - Ecuador</h5>
-                    <div class="time">Septiembre de 2018 - Julio de 2020</div>
-                </div><!--//item-->
-            </div><!--//education-container-->
-            
-            <div class="languages-container container-block">
-                <h2 class="container-block-title">Idiomas</h2>
-                <ul class="list-unstyled interests-list">
-                    <li>Español <span class="lang-desc">(Nativo)</span></li>
-                    <li>Inglés <span class="lang-desc">(Académico 1)</span></li>
-                    <!-- <li>Spanish <span class="lang-desc">(Professional)</span></li>  
-                     ctrl + k + c  ctrl + k + u -->
-                </ul>
-            </div><!--//interests-->
-            
-            <div class="interests-container container-block">
-                <h2 class="container-block-title">Interéses</h2>
-                <ul class="list-unstyled interests-list">
-                    <li>Programación</li>
-                    <li>Video juegos</li>
-                    <li>Lectura</li>
-                    <li>Computación</li>
-                </ul>
-            </div><!--//interests-->
 
-            <div class="interests-container container-block">
-                <h2 class="container-block-title">Habilidades</h2>
-                <ul class="list-unstyled interests-list">
-                    <li>Empatía</li>
-                    <li>Comunicación asertiva</li>
-                    <li>Resolución de problemas</li>
-                    <li>Solidaridad</li>
-                    <li>Trabajo en equipo</li>
-                </ul>
-            </div>
+    <header>
+        <img src="assets/images/profile.png" alt="Foto de perfil">
+        <h1>Luis Mateo Coronado Laine</h1>
+        <p>Estudiante de Ingeniería en Computación | Escuela Politécnica Nacional</p>
+        <p><a href="mailto:luis.coronado@epn.edu.ec">luis.coronado@epn.edu.ec</a> | 0987654321</p>
+        <p>
+            <a href="https://linkedin.com/in/mateo-coronado-477088279" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/LAINE30" target="_blank">GitHub</a>
+        </p>
+    </header>
 
-            <div class="interests-container container-block">
-                <h2 class="container-block-title">Otros datos de interés</h2>
-                <ul class="list-unstyled interests-list">
-                    <li>Certificado de participación en el estudio clínico Fase III</li>
-                    <h5 class="meta">BIODIMED-Unidad Alemana</h5>
-                    <div class="time">27/04/2021 durante 11 meses</div>
+    <main class="container-section">
 
-                    <li>Ayuda comunitaria en Guaguacentros y Ancianatos</li>
-                    <div class="time">03/2018 durante 2 mes</div>   
-                </ul>
-            </div>
-            
-        </div><!--//sidebar-wrapper-->
-        
-        <div class="main-wrapper">
+        <section>
+            <h2 class="section-title">Resumen Profesional</h2>
+            <p>Soy una persona dedicada, con experiencia en atención al cliente y comunicación. Apasionado por la tecnología y los videojuegos, tengo como objetivo profesional integrarme al desarrollo de videojuegos y sistemas. Estoy comprometido con mi crecimiento personal y el desarrollo de habilidades técnicas y sociales.</p>
+        </section>
 
-            
-            <section class="section summary-section">
-                <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-user"></i></span>Objetivo Profesional</h2>
-                <div class="summary">
-                    <p>
-                        Soy una persona dedicada en mi trabajo, con experiencia en Atención al cliente y comunicación. 
-                        Estoy comprometido con el desarrollo de la tecnología, me apasiona los videojuegos y por tal razón en un futuro pienso dedicarme a este campo,
-                        de la misma manera me comprometo con mi avance personal al desarrollar nuevas destrezas.
-                        <!-- You can <a href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/orbit-free-resume-cv-bootstrap-theme-for-developers/" target="_blank">download this free resume/CV template here</a>.  -->
-                        </p>
-                        <img src="assets/images/456.jpg" alt="Descripción de la imagen" class="imagen-final">
-                </div><!--//summary-->
-            </section><!--//section-->
-            
-            <section class="section experiences-section">
-                <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-briefcase"></i></span>Experiencia Profesional</h2>
-                
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Atención al cliente y Gestión de Bodega</h3>
-                            <div class="time">oct/2021 - ene/2022</div>
-                        </div><!--//upper-row-->
-                        <div class="company">Almacenes San Francisco-Quito</div>
-                    </div><!--//meta-->
-                    <div class="details">
-                        <p>Venta de productos, transporte de mercadería, Manejo de Caja registradora, Gestión de Inventario.</p>  
-                        <!-- <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-                            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p> -->
-                    </div><!--//details-->
-                </div><!--//item-->
-                
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Atención al cliente y venta de productos</h3>
-                            <div class="time">marz/2022 - sept/2023</div>
-                        </div><!--//upper-row-->
-                        <div class="company">Tienda “EL Fogón” - Quito</div>
-                    </div><!--//meta-->
-                    <div class="details">
-                        <p>Venta de productos, transporte de mercadería, Manejo de Caja registradora</p>  
-                        
-                    </div><!--//details-->
-                </div><!--//item-->
-                
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Conteo Rápido</h3>
-                            <div class="time">13/feb/2021</div>
-                        </div><!--//upper-row-->
-                        <div class="company">CNE - Quito</div>
-                    </div><!--//meta-->
-                    <div class="details">
-                        <p>Registro de conteo rápido en las urnas designadas</p>  
-                    </div><!--//details-->
-                </div><!--//item-->
-                
-            </section><!--//section-->
+        <section>
+            <h2 class="section-title">Educación</h2>
+            <ul>
+                <li><strong>Ingeniería en Ciencias de la Computación</strong> - Escuela Politécnica Nacional (Desde marzo 2022)</li>
+                <li><strong>Bachillerato Internacional</strong> - Unidad Educativa Amazonas (2018 - 2020)</li>
+            </ul>
+        </section>
 
+        <section>
+            <h2 class="section-title">Experiencia Laboral</h2>
+            <ul>
+                <li><strong>Atención al Cliente y Gestión de Bodega</strong> – Almacenes San Francisco (Oct 2021 - Ene 2022)</li>
+                <li><strong>Ventas y Atención al Cliente</strong> – Tienda "El Fogón" (Mar 2022 - Sep 2023)</li>
+                <li><strong>Conteo Rápido</strong> – CNE (13 Feb 2021)</li>
+            </ul>
+        </section>
 
-            <section class="section experiences-section">
-                <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-briefcase"></i></span>Informática</h2>
-                
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Introdución a internet de las cosas</h3>
-                            <div class="time">08/11/2020 duración de 20 horas</div>
-                        </div><!--//upper-row-->
-                        <div class="company">Cisco</div>
-                    </div><!--//meta-->
-                </div><!--//item-->
+        <section>
+            <h2 class="section-title">Cursos & Certificaciones</h2>
+            <ul>
+                <li>Introducción al Internet de las Cosas – Cisco (20h)</li>
+                <li>Introducción a la Seguridad Cibernética – Cisco (15h)</li>
+                <li>Windows, Photoshop e Ilustrador – DCA Sistemas (20h)</li>
+                <li>Operador de Computadoras y Multimedia – Centro de Capacitación (90h)</li>
+                <li>Servicio al Cliente – CN SMART (12h)</li>
+            </ul>
+        </section>
 
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Introdución a la Seguridad Cibernética</h3>
-                            <div class="time">17/10/2021 duración de 15 horas</div>
-                        </div><!--//upper-row-->
-                        <div class="company">Cisco</div>
-                    </div><!--//meta-->
-                </div><!--//item-->
+        <section>
+            <h2 class="section-title">Proyectos</h2>
+            <ul>
+                <li><a href="https://epnecuador-my.sharepoint.com/:f:/g/personal/luis_coronado_epn_edu_ec/ErLjKrcPx4tNjXpGhsTlZ80BK9Ij8pigdvyujHBP8qEogQ?e=sQdjtv" target="_blank">Biblioteca Estudiantil</a> – CRUD completo con base de datos</li>
+                <li><a href="https://drive.google.com/drive/folders/1DKwKvfWih0hg-jfKXTTy1OkKjI0V0B0I?usp=drive_link" target="_blank">Flappy Bird</a> – Juego en Java de proyecto final</li>
+            </ul>
+        </section>
 
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Windows, Photoshop, Ilustrador</h3>
-                            <div class="time">10/12/2017 duración de 20 horas</div>
-                        </div><!--//upper-row-->
-                        <div class="company">DCA SISTEMAS</div>
-                    </div><!--//meta-->
-                </div><!--//item-->
+        <section>
+            <h2 class="section-title">Habilidades Técnicas</h2>
+            <div class="skills-bar"><div style="width: 90%;">Java</div></div>
+            <div class="skills-bar"><div style="width: 80%;">C / C#</div></div>
+            <div class="skills-bar"><div style="width: 70%;">Matlab</div></div>
+            <div class="skills-bar"><div style="width: 60%;">Ensamblador</div></div>
+            <div class="skills-bar"><div style="width: 50%;">Python</div></div>
+            <div class="skills-bar"><div style="width: 25%;">JavaScript</div></div>
+        </section>
 
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Operador de Computadoras y Multimedia</h3>
-                            <div class="time">29/04/2017 duración de 90 horas</div>
-                        </div><!--//upper-row-->
-                        <div class="company">Centro de Capacitación Ocupacional en Computación e Informática</div>
-                    </div><!--//meta-->
-                </div><!--//item-->
-                   
-            </section>    
+        <section>
+            <h2 class="section-title">Idiomas</h2>
+            <ul>
+                <li>Español (Nativo)</li>
+                <li>Inglés (Nivel Académico 1)</li>
+            </ul>
+        </section>
 
-            <section class="section experiences-section">
-                <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-briefcase"></i></span>Formación Complementaria</h2>
-                
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Servicio al Cliente</h3>
-                            <div class="time">oct/2020 - oct/2020 duración de 12 horas</div>
-                        </div><!--//upper-row-->
-                        <div class="company">Centro de Negocios Inteligentes C.N.SMART</div>
-                    </div><!--//meta-->
-                </div><!--//item-->
-                   
-            </section>
-            
-            <section class="section projects-section">
-                <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-archive"></i></span>Projectos</h2>
-                <div class="intro">
-                    <p> Proyectos más recientes</p>
-                </div><!--//intro-->
+        <section>
+            <h2 class="section-title">Habilidades Blandas</h2>
+            <ul>
+                <li>Empatía</li>
+                <li>Comunicación Asertiva</li>
+                <li>Resolución de Problemas</li>
+                <li>Trabajo en Equipo</li>
+                <li>Solidaridad</li>
+            </ul>
+        </section>
 
-                <div class="item">
-                    <span class="project-title"><a href="https://epnecuador-my.sharepoint.com/:f:/g/personal/luis_coronado_epn_edu_ec/ErLjKrcPx4tNjXpGhsTlZ80BK9Ij8pigdvyujHBP8qEogQ?e=sQdjtv" target="_blank">Biblioteca Estudiantil</a></span> - <span class="project-tagline">Proyecto de final del semestre en la materia de Programación 2. 
-                        Una bliblioteca conectada a una base de datos en la cual se pude realizar todas las operaciones de CRUD </span>               
-                </div><!--//item-->
+        <section>
+            <h2 class="section-title">Otros Datos de Interés</h2>
+            <ul>
+                <li>Participación en estudio clínico Fase III (BIODIMED, 11 meses)</li>
+                <li>Voluntariado en Guaguacentros y Ancianatos (2 meses)</li>
+            </ul>
+        </section>
 
-                <div class="item">
-                    <span class="project-title"><a href="https://drive.google.com/drive/folders/1DKwKvfWih0hg-jfKXTTy1OkKjI0V0B0I?usp=drive_link" target="_blank">Flappy Bird</a></span> - <span class="project-tagline">Proyecto de final del semestre en la materia de Programación 1</span>
-                </div><!--//item-->
+    </main>
 
-            </section><!--//section-->
-            
-            <section class="skills-section section">
-                <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-rocket"></i></span>Habilidades &amp; Competencias</h2>
-                <div class="skillset">   
-                    
-                    
-                    <div class="item">
-                        <h3 class="level-title">Python</h3>
-                        <div class="progress level-bar">
-						    <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-						</div>                               
-                    </div><!--//item-->
-                    
-                    <div class="item">
-                        <h3 class="level-title">Javascript</h3>
-                        <div class="progress level-bar">
-						    <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-						</div>                              
-                    </div><!--//item-->
-                    
-                    <div class="item">
-                        <h3 class="level-title">C &amp; C#</h3>
-                        <div class="progress level-bar">
-						    <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-						</div>                                 
-                    </div><!--//item-->
-                    
-                    <div class="item">
-                        <h3 class="level-title">Java</h3>
-                        <div class="progress level-bar">
-							    <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-						</div>                                
-                    </div><!--//item-->
-                    
-                    <div class="item">
-                        <h3 class="level-title">Ensamblador</h3>
-                        <div class="progress level-bar">
-						    <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-						</div>                                  
-                    </div><!--//item-->
-                    
-                    <div class="item">
-                        <h3 class="level-title">Matlab</h3>
-                        <div class="progress level-bar">
-						    <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-						</div>                                 
-                    </div><!--//item-->
-                    
-                </div>  
-            </section><!--//skills-section-->
-            
-        </div><!--//main-body-->
-    </div>
- 
-    <footer class="footer">
-        <div class="text-center">
-            <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
-            <small class="copyright">Designed with <i class="fa-solid fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
-        </div><!--//container-->
-    </footer><!--//footer-->
-        
+    <footer>
+        &copy; 2025 Luis Mateo Coronado Laine. Todos los derechos reservados.
+    </footer>
+
 </body>
-</html> 
-
+</html>
