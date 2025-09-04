@@ -111,9 +111,12 @@ https://templatemo.com/tm-578-first-portfolio
                         </div>
 
                         <div class="col-lg-5 col-12 position-relative">
-                            <div class="hero-image-wrap"></div>
-                            <!-- <img src="images/portrait-happy-excited-man-holding-laptop-computer.png" class="hero-image img-fluid" alt=""> -->
-
+                            <div class="hero-image-wrap" style="position: relative;">
+                                <img src="images/img-mateo-coronado-removebg-preview (Teléfono).png"
+                                     class="hero-image img-fluid"
+                                     alt=""
+                                     style="position: absolute; top: 60%; left: 50%; width: 500px; height: 500px; object-fit: cover; border-radius: 50%; transform: translate(-50%, -50%); box-shadow: 0 0 0 10px rgba(255,255,255,0.1);" />
+                            </div>
                         </div>
 
                     </div>
@@ -427,44 +430,119 @@ https://templatemo.com/tm-578-first-portfolio
                         <div class="col-lg-4 col-md-6 col-12">
                             <div class="projects-thumb">
                                 <div class="projects-info">
-                                    <small class="projects-tag">Branding</small>
-
-                                    <h3 class="projects-title">Zoik agency</h3>
+                                    <small class="projects-tag">C++</small>
+                                    <h3 class="projects-title" style="cursor:pointer;" onclick="toggleDescription(this)">
+                                        Juego de Flappy Bird
+                                    </h3>
+                                    <p class="projects-description" style="display:none;">
+                                        Juego desarrollado en C++ que simula el clásico Flappy Bird. 
+                                        El jugador controla un pájaro que debe evitar obstáculos y 
+                                        sumar puntos. Incluye lógica de colisiones, puntuación 
+                                        y gráficos básicos.<br>
+                                        <strong>Enlace:</strong> <a href="https://epnecuador-my.sharepoint.com/:f:/g/personal/luis_coronado_epn_edu_ec/EualV79OjpxIgb_Y66uLO9IBUwmYS_cqaVP0CQrxWboSOQ?e=4rOnJg" target="_blank" rel="noopener">Ver proyecto</a>
+                                    </p>
                                 </div>
-
-                                <a href="images/projects/nikhil-KO4io-eCAXA-unsplash.jpg" class="popup-image">
-                                    <img src="images/projects/nikhil-KO4io-eCAXA-unsplash.jpg" class="projects-image img-fluid" alt="">
+                                <a href="images/projects/flappy-bird.png" class="popup-image">
+                                    <img src="images/projects/flappy-bird.png" class="projects-image img-fluid" alt="">
                                 </a>
                             </div>
                         </div>
+                        <script>
+                        function toggleDescription(titleElem) {
+                            var desc = titleElem.nextElementSibling;
+                            if (desc && desc.classList.contains('projects-description')) {
+                                desc.style.display = desc.style.display === 'none' ? 'block' : 'none';
+                            }
+                        }
+                        </script>
 
                         <div class="col-lg-4 col-md-6 col-12">
                             <div class="projects-thumb">
                                 <div class="projects-info">
-                                    <small class="projects-tag">Photography</small>
-
-                                    <h3 class="projects-title">The Watch</h3>
+                                    <small class="projects-tag">Java & MySQL</small>
+                                    <h3 class="projects-title" style="cursor:pointer;" onclick="toggleDescription(this)">
+                                        Base de Datos con Java
+                                    </h3>
+                                    <p class="projects-description" style="display:none;">
+                                        Proyecto de gestión de base de datos desarrollado en Java. 
+                                        Permite realizar operaciones CRUD (Crear, Leer, Actualizar, 
+                                        Eliminar) sobre una base de datos. Incluye conexión a la 
+                                        base de datos, manejo de excepciones y una interfaz de usuario 
+                                        básica.<br>
+                                        <strong>Enlace:</strong> <a href="https://epnecuador-my.sharepoint.com/:f:/g/personal/luis_coronado_epn_edu_ec/Eu_0sv4aP89MlJcM0kik28wBzA5YrrJe9y4SBPXbc2BASA?e=a0dNgH" target="_blank" rel="noopener">Ver proyecto</a>
+                                    </p>
                                 </div>
-
-                                <a href="images/projects/the-5th-IQYR7N67dhM-unsplash.jpg" class="popup-image">
-                                    <img src="images/projects/the-5th-IQYR7N67dhM-unsplash.jpg" class="projects-image img-fluid" alt="">
+                                <a href="images/projects/Imagen1.jpg" class="popup-image">
+                                    <img src="images/projects/Imagen1.jpg" class="projects-image img-fluid" alt="">
                                 </a>
                             </div>
                         </div>
+                        <script>
+                        function toggleDescription(titleElem) {
+                            var desc = titleElem.nextElementSibling;
+                            if (desc && desc.classList.contains('projects-description')) {
+                                desc.style.display = desc.style.display === 'none' ? 'block' : 'none';
+                            }
+                        }
+                        </script>
 
                         <div class="col-lg-4 col-md-6 col-12">
                             <div class="projects-thumb">
                                 <div class="projects-info">
-                                    <small class="projects-tag">Website</small>
-
-                                    <h3 class="projects-title">Polo</h3>
+                                    <small class="projects-tag">Python</small>
+                                    <h3 class="projects-title" style="cursor:pointer;" onclick="toggleDescription(this)">
+                                        Seguidor solar con Python
+                                    </h3>
+                                    <p class="projects-description" style="display:none;">
+                                        Aplicación desarrollado en Python que permite 
+                                        determinar la distancia de cada uno de los pistones x_1,x_2
+                                        para enfocar el telescopio a un punto P(x,y)
+                                        desde el centro de la base.
+                                        <br>
+                                        <strong>Enlace:</strong> <a href="https://github.com/LAINE30/Proyecto_Final---MN.git" target="_blank" rel="noopener">Ver proyecto</a>
+                                    </p>
                                 </div>
-
-                                <a href="images/projects/true-agency-9Bjog5FZ-oc-unsplash.jpg" class="popup-image">
-                                    <img src="images/projects/true-agency-9Bjog5FZ-oc-unsplash.jpg" class="projects-image img-fluid" alt="">
+                                <a href="images/projects/Captura de pantalla 2025-09-03 205423.png" class="popup-image">
+                                    <img src="images/projects/Captura de pantalla 2025-09-03 205423.png" class="projects-image img-fluid" alt="">
                                 </a>
                             </div>
                         </div>
+                        <script>
+                        function toggleDescription(titleElem) {
+                            var desc = titleElem.nextElementSibling;
+                            if (desc && desc.classList.contains('projects-description')) {
+                                desc.style.display = desc.style.display === 'none' ? 'block' : 'none';
+                            }
+                        }
+                        </script>
+
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="projects-thumb">
+                                <div class="projects-info">
+                                    <small class="projects-tag">Python</small>
+                                    <h3 class="projects-title" style="cursor:pointer;" onclick="toggleDescription(this)">
+                                        Impresora 2D en Python
+                                    </h3>
+                                    <p class="projects-description" style="display:none;">
+                                        Este proyecto es una impresora 2D escrita en Python que permite crear patrones y 
+                                        dibujos básicos en una cuadrícula utilizando coordenadas cartesianas.
+                                        <br>
+                                        <strong>Enlace:</strong> <a href="https://github.com/LAINE30/Proyecto-Final-IIB.git" target="_blank" rel="noopener">Ver proyecto</a>
+                                    </p>
+                                </div>
+                                <a href="images/projects/Captura de pantalla 2025-09-03 210534.png" class="popup-image">
+                                    <img src="images/projects/Captura de pantalla 2025-09-03 210534.png" class="projects-image img-fluid" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <script>
+                        function toggleDescription(titleElem) {
+                            var desc = titleElem.nextElementSibling;
+                            if (desc && desc.classList.contains('projects-description')) {
+                                desc.style.display = desc.style.display === 'none' ? 'block' : 'none';
+                            }
+                        }
+                        </script>
 
                     </div>
                 </div>
